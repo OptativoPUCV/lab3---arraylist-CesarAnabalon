@@ -288,3 +288,18 @@ Wed 29 Mar 2023 10:45:35 PM UTC:
  tests:  0|6
 total_score: 0/70
 e92bf58
+Wed 29 Mar 2023 10:49:38 PM UTC: 
+ arraylist.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:21:26: error: invalid operands to binary != (have ‘ArrayList’ {aka ‘struct ArrayList’} and ‘void *’)
+   21 |   for(int i = 0; list[i] !=NULL; i++)
+      |                  ~~~~~~~ ^~
+      |                      |
+      |                      ArrayList {aka struct ArrayList}
+arraylist.c:23:14: error: invalid type argument of ‘->’ (have ‘ArrayList’ {aka ‘struct ArrayList’})
+   23 |       list[i]->data =0;
+      |              ^~
+Compilation failed
+151a329

@@ -15,10 +15,13 @@ ArrayList *createList(void)
   ArrayList *list = (ArrayList *) malloc(sizeof(ArrayList));
   assert(list != NULL);
   list->data = (void **) malloc(sizeof(void *) * 10); 
-  // Inicialmente se reserva espacio para 10 elementos
   assert(list->data != NULL);
   list->capacity = 10;
   list->size = 0;
+  for(int i = 0; list[i] !=NULL; i++)
+    {
+      list[i]->data =0;
+    }
   return list;
 }
 
