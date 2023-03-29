@@ -10,10 +10,11 @@ typedef struct ArrayList {
     int size;
 } ArrayList;
 
-ArrayList *createList(void) {
-  ArrayList* arreglo = (ArrayList *) malloc(2 * sizeof(ArrayList);
+ArrayList *createList(void) 
+{
+  ArrayList* arreglo = (ArrayList *) malloc(sizeof(ArrayList);
   
-    return arreglo;
+  return arreglo;
 }
 
 void append(ArrayList * l, void * data){
