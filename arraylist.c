@@ -18,10 +18,7 @@ ArrayList *createList(void)
   assert(list->data != NULL);
   list->capacity = 10;
   list->size = 0;
-  for(int i = 0; list[i]->data !=NULL; i++)
-    {
-      list[i]->data =0;
-    }
+  
   return list;
 }
 
