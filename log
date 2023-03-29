@@ -193,3 +193,40 @@ arraylist.c:16:17: error: ‘arreglo’ is used uninitialized [-Werror=uninitial
 cc1: all warnings being treated as errors
 Compilation failed
 8528727
+Wed 29 Mar 2023 10:36:25 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:15:63: error: expected ‘)’ before ‘;’ token
+   15 |   ArrayList * arreglo = (ArrayList *) malloc(sizeof(ArrayList);
+      |                                             ~                 ^
+      |                                                               )
+arraylist.c:19:1: error: expected ‘,’ or ‘;’ before ‘}’ token
+   19 | }
+      | ^
+test.c:411:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  411 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:434:1: error: expected declaration or statement at end of input
+  434 | }
+      | ^
+test.c:8:6: error: unused variable ‘msg’ [-Werror=unused-variable]
+    8 | char msg[300];
+      |      ^~~
+In file included from test.c:5:
+arraylist.c:15:15: error: unused variable ‘arreglo’ [-Werror=unused-variable]
+   15 |   ArrayList * arreglo = (ArrayList *) malloc(sizeof(ArrayList);
+      |               ^~~~~~~
+test.c:435: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:411:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  411 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+In file included from test.c:5:
+arraylist.c:37:5: error: ‘get_size’ defined but not used [-Werror=unused-function]
+   37 | int get_size(ArrayList * l){
+      |     ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+87929eb
