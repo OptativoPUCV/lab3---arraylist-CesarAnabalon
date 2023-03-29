@@ -118,3 +118,28 @@ Wed 29 Mar 2023 10:30:03 PM UTC:
  tests:  0|6
 total_score: 0/70
 ec9153f
+Wed 29 Mar 2023 10:34:52 PM UTC: 
+ arraylist.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:16:10: error: invalid type argument of ‘->’ (have ‘ArrayList’ {aka ‘struct ArrayList’})
+   16 |   arreglo->data = (void **) malloc(2,sizeof(void));
+      |          ^~
+arraylist.c:16:29: error: too many arguments to function ‘malloc’
+   16 |   arreglo->data = (void **) malloc(2,sizeof(void));
+      |                             ^~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:540:14: note: declared here
+  540 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+In file included from test.c:5:
+arraylist.c:18:10: error: incompatible types when returning type ‘ArrayList’ {aka ‘struct ArrayList’} but ‘ArrayList *’ {aka ‘struct ArrayList *’} was expected
+   18 |   return arreglo;
+      |          ^~~~~~~
+arraylist.c:19:1: error: control reaches end of non-void function [-Werror=return-type]
+   19 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+b322533

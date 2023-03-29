@@ -12,11 +12,9 @@ typedef struct ArrayList {
 
 ArrayList *createList(void) 
 {
-  ArrayList* arreglo = (ArrayList *) calloc(2,sizeof(ArrayList));
-  arreglo->data = (void *) calloc(2,sizeof(void));
-  
-
-  
+  ArrayList arreglo;
+  arreglo->data = (void **) malloc(2,sizeof(void));
+   
   return arreglo;
 }
 
