@@ -15,15 +15,16 @@ ArrayList *createList(void)
   ArrayList * arreglo = (ArrayList *) malloc(sizeof(ArrayList));
   arreglo->data = (void **) malloc(2 * sizeof(void*));
   arreglo->capacity = 2;
-  arreglo->size = 2;
+  arreglo->size = 5;
 
   if(arreglo == NULL) exit(1);
   
   return arreglo;
 }
 
-void append(ArrayList * l, void * data){
-
+void append(ArrayList * l, void * data)
+{
+  
 }
 
 void push(ArrayList * l, void * data, int i){
