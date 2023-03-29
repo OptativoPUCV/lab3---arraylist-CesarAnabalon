@@ -16,6 +16,9 @@ ArrayList *createList(void)
   arreglo->data = (void **) malloc(2 * sizeof(void*));
   arreglo->capacity = 2;
   arreglo->size = 2;
+
+  if(arreglo == NULL) exit(1);
+  
   return arreglo;
 }
 
