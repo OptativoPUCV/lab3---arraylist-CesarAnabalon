@@ -249,3 +249,9 @@ arraylist.c:17:24: error: expected ‘;’ before ‘arreglo’
       |   ~~~~~~~               
 Compilation failed
 06ee962
+Wed 29 Mar 2023 10:37:59 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+6b87887
