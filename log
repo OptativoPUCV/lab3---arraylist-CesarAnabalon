@@ -168,3 +168,17 @@ arraylist.c:19:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 e33263d
+Wed 29 Mar 2023 10:35:14 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:16:29: error: too many arguments to function ‘malloc’
+   16 |   arreglo->data = (void **) malloc(2,sizeof(void*));
+      |                             ^~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:540:14: note: declared here
+  540 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+Compilation failed
+0e214eb
