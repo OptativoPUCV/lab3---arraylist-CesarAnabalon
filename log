@@ -272,3 +272,13 @@ Wed 29 Mar 2023 10:44:42 PM UTC:
  1 file changed, 48 insertions(+), 19 deletions(-)
  tests:  0|0
 c73425f
+Wed 29 Mar 2023 10:45:14 PM UTC: 
+ arraylist.c | 56 ++++++++++++++------------------------------------------
+ 1 file changed, 14 insertions(+), 42 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:24:1: error: expected expression before ‘}’ token
+   24 | }
+      | ^
+Compilation failed
+3edd518
