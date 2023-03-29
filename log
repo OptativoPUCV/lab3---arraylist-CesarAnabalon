@@ -236,3 +236,16 @@ Wed 29 Mar 2023 10:36:32 PM UTC:
  tests:  0|6
 total_score: 0/70
 3d4ab8c
+Wed 29 Mar 2023 10:37:53 PM UTC: 
+ arraylist.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:17:24: error: expected ‘;’ before ‘arreglo’
+   17 |   arreglo->capacity = 2
+      |                        ^
+      |                        ;
+   18 |   arreglo->size = 2;
+      |   ~~~~~~~               
+Compilation failed
+06ee962
