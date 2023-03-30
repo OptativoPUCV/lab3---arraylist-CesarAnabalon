@@ -43,6 +43,11 @@ void push(ArrayList * l, void * data, int i)
 {
   if(i > l->size) EXIT_FAILURE;
   
+  if(l->capacity == l->size)
+  {
+    l->capacity = 2 * l->capacity;
+    l->data = (void**) realloc(l->data,sizeof(void)*l->capacity);
+  }
   
   
 }
