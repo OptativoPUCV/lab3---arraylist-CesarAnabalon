@@ -13,7 +13,7 @@ typedef struct ArrayList {
 ArrayList *createList() 
 {
   
-  ArrayList * l = new ArrayList();
+  ArrayList l = new ArrayList();
   
   
   return l;
