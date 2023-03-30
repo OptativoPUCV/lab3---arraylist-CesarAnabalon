@@ -645,3 +645,24 @@ arraylist.c:38:1: error: expected identifier or ‘(’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 f36bbcf
+Thu 30 Mar 2023 06:57:08 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:33:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   33 |   if(l->data[l->size] != NULL)
+      |   ^~
+arraylist.c:35:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   35 |     l->data = (void **) realloc(l->data,sizeof(ArrayList) * l->capacity);
+      |     ^
+arraylist.c: At top level:
+arraylist.c:37:4: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   37 |   l->size++;
+      |    ^~
+arraylist.c:38:1: error: expected identifier or ‘(’ before ‘}’ token
+   38 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+49793fc
