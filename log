@@ -322,3 +322,17 @@ Wed 29 Mar 2023 11:04:15 PM UTC:
  tests:  0|6
 total_score: 0/70
 e6006fc
+Thu 30 Mar 2023 01:02:23 AM UTC: 
+ arraylist.c | 11 +++--------
+ 1 file changed, 3 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:17:3: error: expected identifier or ‘(’ before ‘return’
+   17 |   return;
+      |   ^~~~~~
+arraylist.c:18:1: error: control reaches end of non-void function [-Werror=return-type]
+   18 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c67030f
