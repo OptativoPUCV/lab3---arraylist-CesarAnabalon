@@ -603,3 +603,24 @@ Thu 30 Mar 2023 06:54:59 PM UTC:
  tests:  2|5
 total_score: 15/70
 9fac463
+Thu 30 Mar 2023 06:56:13 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:32:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   32 |   if(l->data[l->size] != NULL)
+      |   ^~
+arraylist.c:34:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   34 |     l->data = (void **) realloc(l->data,sizeof(ArrayList) * l->capacity);
+      |     ^
+arraylist.c: At top level:
+arraylist.c:36:4: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   36 |   l->size++;
+      |    ^~
+arraylist.c:37:1: error: expected identifier or ‘(’ before ‘}’ token
+   37 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+7c3e446
