@@ -61,8 +61,9 @@ void push(ArrayList * l, void * data, int i)
       }
     }
   }
-  l->size++;
   */
+  l->size++;
+  
 }
 
 void* pop(ArrayList * l, int i){
