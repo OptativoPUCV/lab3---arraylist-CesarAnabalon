@@ -52,16 +52,15 @@ void push(ArrayList * l, void * data, int i)
     l->data[j+1] = l->data[j];
   }
 
-  // Inserta el nuevo dato en la posición i
   l->data[i] = data;
 
-  l->size++;
-  
-  
+  l->size++;  
 }
 
-void* pop(ArrayList * l, int i){
-    return NULL;
+void* pop(ArrayList * l, int i)
+{
+  if(i> l->size) EXIT_FAILURE;
+  return (l->data[i]);
 }
 
 void* get(ArrayList * l, int i){
