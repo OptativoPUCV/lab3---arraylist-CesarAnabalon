@@ -53,7 +53,7 @@ void push(ArrayList * l, void * data, int i)
     unsigned short j = l->size;
     for(; j>=i ;j--)
     {
-      l->data[j] = l->data[j+1];
+      l->data[j+1] = l->data[j];
       if(j==i)
       {
         l->data[j] = data;
