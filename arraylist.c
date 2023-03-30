@@ -58,7 +58,7 @@ void push(ArrayList * l, void * data, int i)
       
       if(j==i)
       {
-        l->data[j] = data;
+        l->data[i] = data;
       }
     }
   }
