@@ -468,3 +468,17 @@ In file included from test.c:2:
       |              ^~~~~~
 Compilation failed
 7bee9cc
+Thu 30 Mar 2023 05:11:36 PM UTC: 
+ arraylist.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:16:19: error: ‘new’ undeclared (first use in this function)
+   16 |   ArrayList * l = new ArrayList();
+      |                   ^~~
+arraylist.c:16:19: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:16:23: error: expected ‘,’ or ‘;’ before ‘ArrayList’
+   16 |   ArrayList * l = new ArrayList();
+      |                       ^~~~~~~~~
+Compilation failed
+bfd7864
