@@ -574,3 +574,14 @@ Thu 30 Mar 2023 06:46:57 PM UTC:
  tests:  2|5
 total_score: 15/70
 aa5d154
+Thu 30 Mar 2023 06:49:41 PM UTC: 
+ arraylist.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:27:14: error: unused variable ‘ptr’ [-Werror=unused-variable]
+   27 |   ArrayList *ptr;
+      |              ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+ef8bb7b
