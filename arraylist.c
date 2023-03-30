@@ -25,7 +25,7 @@ ArrayList *createList()
 void append(ArrayList * l, void * data)
 {  
   //validar  que tiene espacion 
-  if(l->size > l->capacity) 
+  if(l->size < l->capacity) 
   {
     l->data[l->size] = data;
   }
