@@ -39,8 +39,11 @@ void append(ArrayList * l, void * data)
   l->size++;
 }
 
-void push(ArrayList * l, void * data, int i){
-
+void push(ArrayList * l, void * data, int i)
+{
+  if(i > l->size) EXIT_FAILURE;
+  
+  
 }
 
 void* pop(ArrayList * l, int i){
