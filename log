@@ -342,3 +342,25 @@ Thu 30 Mar 2023 01:02:41 AM UTC:
  tests:  0|6
 total_score: 0/70
 123f30f
+Thu 30 Mar 2023 01:05:49 AM UTC: 
+ arraylist.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:15:33: error: too few arguments to function ‘calloc’
+   15 |   ArrayList * l = (ArrayList *) calloc(2 *sizeof(ArrayList));
+      |                                 ^~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:543:14: note: declared here
+  543 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+In file included from test.c:5:
+arraylist.c:16:21: error: too few arguments to function ‘calloc’
+   16 |   l->data= (void**) calloc(2*sizeof(void));
+      |                     ^~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:543:14: note: declared here
+  543 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+Compilation failed
+0d03d15

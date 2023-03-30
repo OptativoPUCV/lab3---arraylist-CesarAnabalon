@@ -10,9 +10,10 @@ typedef struct ArrayList {
     int size;
 } ArrayList;
 
-ArrayList *createList(void) 
+ArrayList *createList() 
 {
-  
+  ArrayList * l = (ArrayList *) calloc(2 *sizeof(ArrayList));
+  l->data= (void**) calloc(2*sizeof(void));
   
   return NULL;
 }
