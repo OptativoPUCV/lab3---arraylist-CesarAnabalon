@@ -14,7 +14,7 @@ ArrayList *createList()
 {
   ArrayList * l ;
   l= (ArrayList *) malloc(sizeof(ArrayList));
-  l->capacity = 2;
+  l->capacity = 4;
   
   l->data = (void **) malloc(sizeof(void*) * l->capacity);
   l->size = 0;
@@ -29,6 +29,7 @@ void append(ArrayList * l, void * data)
   {
     l->data[l->size] = data;
   }
+  
   if(l->data[l->size] != NULL)
     l->capacity = 2 * l->capacity;
     l->data = (void **) realloc(l->data,sizeof(ArrayList) * l->capacity);
