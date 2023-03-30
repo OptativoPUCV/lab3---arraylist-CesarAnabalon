@@ -866,3 +866,14 @@ Thu 30 Mar 2023 10:29:35 PM UTC:
  1 file changed, 5 insertions(+), 2 deletions(-)
  tests:  0|0
 6cc9b3e
+Thu 30 Mar 2023 10:30:40 PM UTC: 
+ arraylist.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:79:1: error: control reaches end of non-void function [-Werror=return-type]
+   79 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+7806c10
