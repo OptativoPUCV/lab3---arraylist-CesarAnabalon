@@ -48,11 +48,14 @@ void push(ArrayList * l, void * data, int i)
     l->capacity = 2 * l->capacity;
     l->data = (void**) realloc(l->data,sizeof(void)*l->capacity);
   }
-  unsigned long aux;
-  unsigned short j = 0;
-  for(;j<l->capacity;j++)
+  unsigned short j = l->size;
+  for(; j>=i ;j--)
     {
-      
+      l->data[j] = l->data[j+1];
+      if(j==i)
+      {
+        l->data[j] = data;
+      }
     }
   
 }

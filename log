@@ -791,3 +791,8 @@ arraylist.c:51:17: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 347a405
+Thu 30 Mar 2023 09:01:25 PM UTC: 
+ arraylist.c | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+ tests:  0|0
+b2088ff
