@@ -97,5 +97,5 @@ void clean(ArrayList * l)
 {
   l->capacity = 2;
   l->size = 0;
-  l->data = (void **)realloc(l->data, sizeof(void *) * l->capacity);
+  l->data = (void **)realloc(l->data, sizeof(void ) * l->capacity);
 }
