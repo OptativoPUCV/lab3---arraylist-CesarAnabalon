@@ -763,3 +763,20 @@ Thu 30 Mar 2023 08:24:01 PM UTC:
  tests:  3|4
 total_score: 20/70
 0573851
+Thu 30 Mar 2023 08:29:28 PM UTC: 
+ arraylist.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:52:18: error: ‘i’ redeclared as different kind of symbol
+   52 |   unsigned short i = 0;
+      |                  ^
+arraylist.c:42:43: note: previous definition of ‘i’ with type ‘int’
+   42 | void push(ArrayList * l, void * data, int i)
+      |                                       ~~~~^
+arraylist.c:51:17: error: unused variable ‘aux’ [-Werror=unused-variable]
+   51 |   unsigned long aux;
+      |                 ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+4b85bb1
