@@ -25,16 +25,12 @@ ArrayList *createList()
 void append(ArrayList * l, void * data)
 {  
   //validar  que tiene espacion 
-  if(l->size <= l->capacity) 
+  if(l->data[l->size] == 0) 
   {
     l->data[l->size] = data;
   }
-  else
-    {
-      l->capacity = 2 * l->capacity;
-      l->data = (void **) realloc(l->data,sizeof(ArrayList) * l->capacity);
-    }
-  l->size++;
+  
+  
 }
 
 void push(ArrayList * l, void * data, int i){
