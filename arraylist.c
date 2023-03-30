@@ -48,7 +48,8 @@ void push(ArrayList * l, void * data, int i)
     l->capacity = 2 * l->capacity;
     l->data = (void**) realloc(l->data,sizeof(void)*l->capacity);
   }
-  else
+
+  if(l->size < l->capacity)
   {
     unsigned short j = l->size;
     for(; j>=i ;j--)
