@@ -551,3 +551,20 @@ arraylist.c:25:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 5501b23
+Thu 30 Mar 2023 06:17:19 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:28:16: error: invalid type argument of ‘->’ (have ‘ArrayList’ {aka ‘struct ArrayList’})
+   28 |   if(l[l->size]->data == NULL) return NULL;
+      |                ^~
+arraylist.c:28:39: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   28 |   if(l[l->size]->data == NULL) return NULL;
+      |                                       ^~~~
+arraylist.c:25:6: note: declared here
+   25 | void append(ArrayList * l, void * data)
+      |      ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+51b7daa

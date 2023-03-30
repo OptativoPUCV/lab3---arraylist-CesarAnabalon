@@ -25,7 +25,7 @@ ArrayList *createList()
 void append(ArrayList * l, void * data)
 {
   //validar  que tiene espacion 
-  if(l[l->size] == NULL) return NULL;
+  if(l[l->size]->data == NULL) return NULL;
   //asignar el valor al array
 
   //retornamos
