@@ -30,7 +30,7 @@ void append(ArrayList * l, void * data)
     l->data[l->size] = data;
   }
   else{
-    l->capacity = (l->capacity * 2);
+    l->capacity = 2 * l->capacity;
     l->data = realloc(l->data,sizeof(ArrayList) * l->capacity);
   }
   
