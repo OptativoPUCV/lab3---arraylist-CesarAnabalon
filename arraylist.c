@@ -23,9 +23,7 @@ ArrayList *createList()
 }
 
 void append(ArrayList * l, void * data)
-{
-  ArrayList *ptr;
-  
+{  
   //validar  que tiene espacion 
   if(l->data[l->size] == NULL) 
   {

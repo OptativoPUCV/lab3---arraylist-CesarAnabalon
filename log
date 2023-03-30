@@ -585,3 +585,9 @@ arraylist.c:27:14: error: unused variable ‘ptr’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ef8bb7b
+Thu 30 Mar 2023 06:49:49 PM UTC: 
+ arraylist.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  2|5
+total_score: 15/70
+e719b7e
