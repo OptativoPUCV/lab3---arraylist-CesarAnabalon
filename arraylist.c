@@ -27,7 +27,7 @@ void append(ArrayList * l, void * data)
   if(l->capacity == l->size)
   {
     l->capacity = 2 * l->capacity;
-    l->data = (void**) realloc(l->data,sizeof(void)*l->capacity);
+    l->data = (void**) realloc(l->data,sizeof(void*)*l->capacity);
     l->data[l->size] = data;
   }
   l->data[l->size] = data;
