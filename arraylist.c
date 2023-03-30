@@ -14,7 +14,7 @@ ArrayList *createList()
 {
   ArrayList * l ;
   l= (ArrayList *) malloc(sizeof(ArrayList));
-  l->capacity = 2;
+  l->capacity = 3;
   
   l->data = (void **) malloc(sizeof(void*) * l->capacity);
   l->size = 0;
@@ -25,7 +25,7 @@ ArrayList *createList()
 void append(ArrayList * l, void * data)
 {  
   //validar  que tiene espacion 
-  if(l->data[l->size] == NULL) 
+  if(l->size <= l->capacity) 
   {
     l->data[l->size] = data;
   }
