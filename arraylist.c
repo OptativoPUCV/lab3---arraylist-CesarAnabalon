@@ -51,10 +51,11 @@ void push(ArrayList * l, void * data, int i)
 
   if(l->size < l->capacity)
   {
-    unsigned short j = l->size;
-    for(; j>=i ;j--)
+    unsigned short j;
+    for(j = l->size; j>=i ;j--)
     {
       l->data[j+1] = l->data[j];
+      
       if(j==i)
       {
         l->data[j] = data;
