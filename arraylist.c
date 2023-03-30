@@ -12,9 +12,9 @@ typedef struct ArrayList {
 
 ArrayList *createList(void) 
 {
-  ArrayList
   
-  return;
+  
+  return NULL;
 }
 
 void append(ArrayList * l, void * data)
