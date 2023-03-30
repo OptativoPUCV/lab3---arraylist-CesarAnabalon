@@ -386,3 +386,25 @@ In file included from test.c:2:
       |              ^~~~~~
 Compilation failed
 56fd148
+Thu 30 Mar 2023 01:12:11 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:15:19: error: too few arguments to function ‘calloc’
+   15 |   ArrayList * l = calloc(2 * sizeof(ArrayList));
+      |                   ^~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:543:14: note: declared here
+  543 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+In file included from test.c:5:
+arraylist.c:16:21: error: too few arguments to function ‘calloc’
+   16 |   l->data= (void**) calloc(2 * sizeof(void));
+      |                     ^~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:543:14: note: declared here
+  543 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+Compilation failed
+fbf8d6a
