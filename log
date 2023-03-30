@@ -568,3 +568,9 @@ arraylist.c:25:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 51b7daa
+Thu 30 Mar 2023 06:46:57 PM UTC: 
+ arraylist.c | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+ tests:  2|5
+total_score: 15/70
+aa5d154

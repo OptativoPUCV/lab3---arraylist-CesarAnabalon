@@ -24,9 +24,18 @@ ArrayList *createList()
 
 void append(ArrayList * l, void * data)
 {
+  
   //validar  que tiene espacion 
-  if(l[l->size]->data == NULL) return NULL;
-  //asignar el valor al array
+  if(l->data[l->size] == NULL) 
+  {
+    l->data[l->size] = data;
+  }
+  else{
+    l->capacity = (l->capacity * 2);
+    //l->data = realloc(void *ptr, )
+  }
+  
+  l->size++;
 
   //retornamos
   
