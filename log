@@ -888,3 +888,23 @@ Thu 30 Mar 2023 10:31:13 PM UTC:
  1 file changed, 2 insertions(+), 3 deletions(-)
  tests:  0|0
 ab47f73
+Thu 30 Mar 2023 10:35:17 PM UTC: 
+ arraylist.c | 18 ++++++++++++------
+ 1 file changed, 12 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:63:15: error: lvalue required as left operand of assignment
+   63 |         index = l->size + index;
+      |               ^
+arraylist.c:66:28: error: comparison between pointer and integer [-Werror]
+   66 |     if (index < 0 || index >= l->size) {
+      |                            ^~
+arraylist.c:70:25: error: array subscript is not an integer
+   70 |     void *data = l->data[index];
+      |                         ^
+arraylist.c:72:18: error: initialization of ‘int’ from ‘char * (*)(const char *, int)’ makes integer from pointer without a cast [-Werror=int-conversion]
+   72 |     for (int i = index; i < l->size - 1; i++) {
+      |                  ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ec4fec1
