@@ -29,11 +29,11 @@ void append(ArrayList * l, void * data)
   {
     l->data[l->size] = data;
   }
-  
-  if(l->data[l->size] != NULL)
-    l->capacity = 2 * l->capacity;
-    l->data = (void **) realloc(l->data,sizeof(ArrayList) * l->capacity);
-  }
+  else
+    {
+      l->capacity = 2 * l->capacity;
+      l->data = (void **) realloc(l->data,sizeof(ArrayList) * l->capacity);
+    }
   l->size++;  
 }
 
