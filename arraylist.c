@@ -18,14 +18,17 @@ ArrayList *createList()
   
   l->data = (void **) malloc(sizeof(void*) * l->capacity);
   l->size = 0;
-
-    
   
   return l;
 }
 
 void append(ArrayList * l, void * data)
 {
+  //validar  que tiene espacion 
+  if(l[l->size] == NULL) return NULL;
+  //asignar el valor al array
+
+  //retornamos
   
 }
 
