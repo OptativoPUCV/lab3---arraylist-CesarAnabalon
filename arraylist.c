@@ -24,10 +24,6 @@ ArrayList *createList()
 
 void append(ArrayList * l, void * data)
 {  
-  if(l->data[l->size] == 0) 
-  {
-    l->data[l->size] = data;
-  }
   if(l->capacity == l->size)
   {
     l->capacity = 2 * l->capacity;
